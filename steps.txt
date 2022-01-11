@@ -1,0 +1,16 @@
+-- Make dir structure
+mkdir -p api/{controllers,models,routes}
+touch api/controllers/todoController.js api/models/todoModel.js api/routes/todoRoutes.js
+mkdir config
+touch config/db.js
+touch server.js
+
+npm init
+npm install mongoose express body-parser
+
+-- Sign-up Atlas
+Visit https://www.mongodb.com/cloud/atlas/register as a new user
+Click Build New Cluster button and type in the Project name
+Select any free tier available and click Next Cluster tier button
+Select M0, a shared Cluster (for the purpose of this course) and click Create cluster button
+Now that Cluster is created, select Security tab for IP Whitelist setting and Add whitelist IP
